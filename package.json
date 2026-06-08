@@ -1,0 +1,12 @@
+{
+	"private": true,
+	"type": "module",
+	"name": "frappebin",
+	"description": "Pastebin clone on the Frappe framework — share code, logs, and notes via link.",
+	"scripts": {
+		"postinstall": "cd frontend && yarn install --check-files",
+		"dev": "cd frontend && yarn dev",
+		"build": "cd frontend && yarn build",
+		"upgrade-frappeui": "cd frontend && yarn add frappe-ui@latest && cd .."
+	}
+}
