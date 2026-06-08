@@ -1,0 +1,23 @@
+[
+ {"doctype": "Snippet Language", "name": "plaintext", "language_name": "plaintext", "highlight_alias": "plaintext", "file_extension": "txt"},
+ {"doctype": "Snippet Language", "name": "Python", "language_name": "Python", "highlight_alias": "python", "file_extension": "py"},
+ {"doctype": "Snippet Language", "name": "JavaScript", "language_name": "JavaScript", "highlight_alias": "javascript", "file_extension": "js"},
+ {"doctype": "Snippet Language", "name": "TypeScript", "language_name": "TypeScript", "highlight_alias": "typescript", "file_extension": "ts"},
+ {"doctype": "Snippet Language", "name": "JSON", "language_name": "JSON", "highlight_alias": "json", "file_extension": "json"},
+ {"doctype": "Snippet Language", "name": "Bash", "language_name": "Bash", "highlight_alias": "bash", "file_extension": "sh"},
+ {"doctype": "Snippet Language", "name": "SQL", "language_name": "SQL", "highlight_alias": "sql", "file_extension": "sql"},
+ {"doctype": "Snippet Language", "name": "Go", "language_name": "Go", "highlight_alias": "go", "file_extension": "go"},
+ {"doctype": "Snippet Language", "name": "Rust", "language_name": "Rust", "highlight_alias": "rust", "file_extension": "rs"},
+ {"doctype": "Snippet Language", "name": "YAML", "language_name": "YAML", "highlight_alias": "yaml", "file_extension": "yaml"},
+ {"doctype": "Snippet Language", "name": "HTML", "language_name": "HTML", "highlight_alias": "xml", "file_extension": "html"},
+ {"doctype": "Snippet Language", "name": "CSS", "language_name": "CSS", "highlight_alias": "css", "file_extension": "css"},
+ {"doctype": "Snippet Language", "name": "Java", "language_name": "Java", "highlight_alias": "java", "file_extension": "java"},
+ {"doctype": "Snippet Language", "name": "C", "language_name": "C", "highlight_alias": "c", "file_extension": "c"},
+ {"doctype": "Snippet Language", "name": "C++", "language_name": "C++", "highlight_alias": "cpp", "file_extension": "cpp"},
+ {"doctype": "Snippet Language", "name": "Markdown", "language_name": "Markdown", "highlight_alias": "markdown", "file_extension": "md"},
+ {"doctype": "Snippet Language", "name": "PHP", "language_name": "PHP", "highlight_alias": "php", "file_extension": "php"},
+ {"doctype": "Snippet Language", "name": "Ruby", "language_name": "Ruby", "highlight_alias": "ruby", "file_extension": "rb"},
+ {"doctype": "Snippet Language", "name": "Dockerfile", "language_name": "Dockerfile", "highlight_alias": "dockerfile", "file_extension": "Dockerfile"},
+ {"doctype": "Snippet Language", "name": "Diff", "language_name": "Diff", "highlight_alias": "diff", "file_extension": "diff"},
+ {"doctype": "Snippet Language", "name": "Log", "language_name": "Log", "highlight_alias": "plaintext", "file_extension": "log"}
+]

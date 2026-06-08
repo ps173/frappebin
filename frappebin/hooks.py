@@ -70,6 +70,11 @@ app_license = "mit"
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
+# Serve the SPA deep links (e.g. /frontend/<snippet>) through the frontend page.
+website_route_rules = [
+	{"from_route": "/frontend/<path:app_path>", "to_route": "frontend"},
+]
+
 # automatically load and sync documents of this doctype from downstream apps
 # importable_doctypes = [doctype_1]
 
@@ -149,23 +154,16 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"frappebin.tasks.all"
-# 	],
-# 	"daily": [
-# 		"frappebin.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"frappebin.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"frappebin.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"frappebin.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	"hourly": [
+		"frappebin.tasks.delete_expired_snippets",
+	],
+}
+
+# Fixtures
+# --------
+# Seed the list of supported languages on install/migrate.
+fixtures = ["Snippet Language"]
 
 # Testing
 # -------
