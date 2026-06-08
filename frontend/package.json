@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/assets/frappebin/frontend/ && yarn copy-html-entry",
-    "copy-html-entry": "cp ../frappebin/public/frontend/index.html ../frappebin/www/frontend.html",
+    "copy-html-entry": "cp ../frappebin/public/frontend/index.html ../frappebin/www/frappebin.html",
     "preview": "vite preview"
   },
   "dependencies": {

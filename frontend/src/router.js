@@ -26,7 +26,7 @@ const routes = [
 ]
 
 let router = createRouter({
-  history: createWebHistory('/frontend'),
+  history: createWebHistory('/frappebin'),
   routes,
 })
 

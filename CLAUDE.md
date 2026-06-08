@@ -6,7 +6,7 @@ Anonymous users can both create and view; no login required to view a public lin
 
 ## Frontend (frappe-ui SPA)
 
-The SPA lives in `frontend/` (Vite + Vue 3 + frappe-ui) and is served at `/frontend`.
+The SPA lives in `frontend/` (Vite + Vue 3 + frappe-ui) and is served at `/frappebin`.
 
 ### Dev
 
@@ -15,7 +15,7 @@ cd frontend
 yarn dev
 ```
 
-Then open **`http://frappebin.localhost:8080/frontend`** — use the **site hostname**,
+Then open **`http://frappebin.localhost:8080/frappebin`** — use the **site hostname**,
 not `localhost`. The dev proxy (`getProxyOptions`) routes `/api`, `/app`, `/login`,
 `/assets`, `/files` to the backend **by `Host` header**, so `localhost:8080` would
 proxy to a non-existent site named `localhost`. The backend must be running
@@ -31,18 +31,18 @@ yarn build
 Build flow (mirrors apps/crm and apps/helpdesk — do NOT deviate):
 - `vite build --base=/assets/frappebin/frontend/` → emits assets to
   `frappebin/public/frontend/` with the correct asset base.
-- `copy-html-entry` then `cp`s the built `index.html` to `frappebin/www/frontend.html`.
+- `copy-html-entry` then `cp`s the built `index.html` to `frappebin/www/frappebin.html`.
 
 **Important:** `base` is set ONLY via the `--base` build flag (see `package.json`),
 never in `vite.config.js`. Putting `base` in the config breaks `yarn dev` (blank page).
 
 ### How serving works
-- `frappebin/www/frontend.html` is the built SPA shell (committed; regenerated each build).
-- `frappebin/www/frontend.py` `get_context` supplies `{{ csrf_token }}` to the shell
+- `frappebin/www/frappebin.html` is the built SPA shell (gitignored; regenerated each build).
+- `frappebin/www/frappebin.py` `get_context` supplies `{{ csrf_token }}` to the shell
   (same role as `crm.py`'s boot data).
-- `website_route_rules` in `hooks.py` maps `/frontend/<path:app_path>` → `frontend` so
-  client-side deep links (e.g. `/frontend/<snippet>`) resolve to the SPA.
-- Router uses `createWebHistory('/frontend')`, so the base must stay `/frontend`.
+- `website_route_rules` in `hooks.py` maps `/frappebin/<path:app_path>` → `frappebin` so
+  client-side deep links (e.g. `/frappebin/<snippet>`) resolve to the SPA.
+- Router uses `createWebHistory('/frappebin')`, so the base must stay `/frappebin`.
 
 ## Backend
 

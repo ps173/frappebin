@@ -70,9 +70,9 @@ app_license = "mit"
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
-# Serve the SPA deep links (e.g. /frontend/<snippet>) through the frontend page.
+# Serve the SPA deep links (e.g. /frappebin/<snippet>) through the frappebin page.
 website_route_rules = [
-	{"from_route": "/frontend/<path:app_path>", "to_route": "frontend"},
+	{"from_route": "/frappebin/<path:app_path>", "to_route": "frappebin"},
 ]
 
 # automatically load and sync documents of this doctype from downstream apps
