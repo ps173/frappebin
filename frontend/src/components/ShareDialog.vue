@@ -10,7 +10,7 @@ const emit = defineEmits(['close'])
 const router = useRouter()
 
 const origin = window.location.origin
-const base = `${origin}/frontend`
+const base = `${origin}/frappebin`
 
 // Public snippets need no key; Unlisted/Private require the secret key in the link.
 const shareUrl = computed(() => {
